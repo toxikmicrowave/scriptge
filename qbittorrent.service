@@ -1,0 +1,11 @@
+# /etc/systemd/system/qbittorrent.service
+[Unit]
+Description=qBitTorrent
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/qbittorrent-nox --daemon
+
+[Install]
+WantedBy=multi-user.target
