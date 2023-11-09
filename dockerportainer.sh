@@ -6,7 +6,7 @@ sudo apt update
 sudo apt upgrade -y
 
 # Install Docker + Docker Compose
-print_in_box "-> Installing Docker, Docker Compose + Portainer <-"
+echo "-> Installing Docker, Docker Compose + Portainer <-"
 sudo apt install -y docker.io
 sudo apt install -y docker-compose
 
