@@ -22,11 +22,11 @@ services:
       - 5001:5001
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - $(pwd)/data:/app/data
-      - $(pwd)/stacks:/opt/stacks
+      - /docker/dockge/data:/app/data
+      - /docker/dockge/stacks:/docker/dockge/stacks
     environment:
       # Tell Dockge where to find the stacks
-      - DOCKGE_STACKS_DIR=/opt/stacks
+      - DOCKGE_STACKS_DIR=/docker/dockge/stacks
 EOL
 
 # Start Dockge using Docker Compose
